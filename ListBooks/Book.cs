@@ -10,8 +10,8 @@ namespace ListBooks
     {
         public string Name { get; set; }
         public string Author { get; set; }
-        public int YearRelese { get; set; }
+        public string YearRelese { get; set; }
         public string Genre { get; set; }
-        public int PageCount { get; set; }
+        public string PageCount { get; set; }
     }
 }

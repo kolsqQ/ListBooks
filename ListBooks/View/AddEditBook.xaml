@@ -18,7 +18,7 @@
         <Label Content="Количество страниц"/>
         <TextBox Text="{Binding Book.PageCount}"/>
 
-        <Button Margin="0 10 0 0" Click="Save" Content="Cохронить"/>
+        <Button Margin="0 10 0 0" Click="Save" Content="Сохранить"/>
         <Button Margin="0 10 0 0" Click="Cancel" Content="Отмена"/>
     </StackPanel>
 </Window>

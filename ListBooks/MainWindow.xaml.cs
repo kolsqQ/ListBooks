@@ -39,6 +39,7 @@ namespace ListBooks
         {
             var addEditWindow = new AddEditBook();
             var result = addEditWindow.ShowDialog();
+            if (result == null || result.Value == false) return;
             Books.Add(addEditWindow.Book);
 
 
