@@ -31,8 +31,15 @@ namespace ListBooks.View
 
         private void Save(object sender, RoutedEventArgs e)
         {
-            DialogResult = true;
-            Close();
+            if (Book.YearRelese == null || Book.Genre == null || Book.Author == null || Book.Name == null || Book.PageCount == null)
+            {
+                MessageBox.Show("Введите данные книги");
+            }
+            else
+            {
+                DialogResult = true;
+                Close();
+            }
         }
 
         private void Cancel(object sender, RoutedEventArgs e)
