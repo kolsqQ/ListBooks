@@ -38,7 +38,7 @@ namespace ListBooks
         private void AddBook_Click(object sender, RoutedEventArgs e)
         {
             var addEditWindow = new AddEditBook();
-            addEditWindow.ShowDialog();
+            var result = addEditWindow.ShowDialog();
             Books.Add(addEditWindow.Book);
 
 
