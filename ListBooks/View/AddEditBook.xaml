@@ -1,0 +1,24 @@
+﻿<Window x:Class="ListBooks.View.AddEditBook"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ListBooks.View"
+        mc:Ignorable="d"
+        Title="" Height="350" Width="300" ResizeMode="NoResize">
+    <StackPanel Width="240" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Label Content="Название книги"/>
+        <TextBox Text="{Binding Book.Name}"/>
+        <Label Content="Автор"/>
+        <TextBox Text="{Binding Book.Author}"/>
+        <Label Content="Год выпуска"/>
+        <TextBox Text="{Binding Book.YearRelese}"/>
+        <Label Content="Жанр"/>
+        <TextBox Text="{Binding Book.Genre}"/>
+        <Label Content="Количество страниц"/>
+        <TextBox Text="{Binding Book.PageCount}"/>
+
+        <Button Margin="0 10 0 0" Click="Save" Content="Cохронить"/>
+        <Button Margin="0 10 0 0" Click="Cancel" Content="Отмена"/>
+    </StackPanel>
+</Window>
